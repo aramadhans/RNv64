@@ -1,6 +1,0 @@
-{
-  "plugins": [
-    "babel-plugin-react-native-web"
-    //   "babel-plugin-danger-remove-unused-import"
-  ]
-}
