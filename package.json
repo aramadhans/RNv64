@@ -7,28 +7,46 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "postinstall": "patch-package",
+    "web": "webpack serve -d source-map --mode development --config \"./web/webpack.config.js\" --inline --color --history-api-fallback"
   },
   "dependencies": {
+    "@alami-group/hijra-os": "^1.1.24",
+    "@babel/polyfill": "^7.12.1",
+    "babel-plugin-inline-import": "^3.0.0",
+    "patch-package": "^6.5.1",
+    "postinstall-postinstall": "^2.1.0",
     "react": "17.0.1",
+    "react-dom": "^17.0.2",
     "react-native": "0.64.2",
     "react-native-drop-shadow": "0.0.4",
     "react-native-gesture-handler": "^2.4.2",
-    "react-native-linear-gradient": "^2.6.2",
+    "react-native-linear-gradient": "^2.5.6",
     "react-native-reanimated": "^2.8.0",
     "react-native-safe-area-context": "^3.2.0",
     "react-native-svg": "^12.3.0",
-    "react-native-webview": "^11.22.7"
+    "react-native-svg-web": "^1.0.9",
+    "react-native-toast-message": "^2.1.5",
+    "react-native-web": "^0.18.9",
+    "react-native-webview": "^11.23.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
     "@babel/runtime": "^7.20.7",
     "@react-native-community/eslint-config": "^3.2.0",
     "babel-jest": "^29.3.1",
+    "babel-loader": "^8.2.5",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "babel-plugin-react-native-web": "^0.18.9",
     "eslint": "^8.31.0",
     "jest": "^29.3.1",
     "metro-react-native-babel-preset": "^0.74.0",
-    "react-test-renderer": "17.0.1"
+    "react-test-renderer": "17.0.1",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.40.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^3.11.3"
   },
   "jest": {
     "preset": "react-native"
